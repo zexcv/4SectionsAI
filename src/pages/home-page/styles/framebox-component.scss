@@ -1,0 +1,108 @@
+.homepage-framebox-component {
+
+    margin: 135px 152px auto auto;
+    display: grid;
+    grid-template: repeat(2, 1fr) / repeat(2, 1fr);
+    grid-template-rows: auto;
+    column-gap: 24px;
+    row-gap: 31px;
+    
+    &__box {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 24px auto;
+        gap: 16px;
+        width: 268px;
+        height: 100%;
+        border-radius: 24px;
+        background-color: var(--color-box);
+
+        & p {
+            max-width: 236px;
+            text-align: center;
+        }
+    }
+}
+
+//TABLET
+@media (max-width: 1380px) {   
+    .homepage-framebox-component {
+        gap: 16px;
+        margin: 0 auto;
+
+        &__box {
+            margin: 0;
+            width: 240px;
+            height: 218px;
+            border-radius: 20px;
+
+            & img {
+                width: 56px;
+                margin-right: 4px;
+                padding-top: 20px;
+            }
+
+            & h3 {
+                margin-right: 4px;
+            }
+                
+            & p {
+                margin-right: 1px;
+                font-size: 14px;
+                line-height: 22px;
+                max-width: 209px;
+                text-align: center;
+                padding-bottom: 20px;
+            }
+        }
+    }
+}
+
+// MOBILE
+@media (max-width: 575px) {
+
+    .homepage-framebox-component {
+        grid-template: repeat(4, 1fr) / repeat(1, 1fr);
+        gap: 16px;
+        margin: 0 auto;
+            
+        &__box {
+            margin: 0;
+            width: 343px;
+            height: 196px;
+
+            & img {
+                width: 56px;
+                margin: 0px;
+                padding-top: 20px;
+            }
+
+            & h3 {
+                margin-left: 4px;
+            }
+                
+            & p {
+                margin-left: 4px;
+                font-size: 14px;
+                line-height: 22px;
+                max-width: 303px;
+                padding-bottom: 20px;
+            }
+        }
+    }
+}
+
+//280PX READY
+@media (max-width: 380px) {  
+    .homepage-framebox-component {
+        margin: 180px auto ;
+        gap: 6px;
+
+        &__box { 
+            width: 260px;
+        }
+
+    }
+}
